@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES6",
         "module": "ESNext",
-        "baseUrl": "/",
+        "baseUrl": ".",
         "sourceMap": false, // map파일 생성 여부
         "noImplicitAny": false, // any타입에 대해 엄격 검사 여부
         "outDir": "dist", // 컴파일 후 생성되는 폴더명
