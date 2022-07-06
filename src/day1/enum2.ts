@@ -1,27 +1,27 @@
 // 유니온 열거형과 유니온 멤버 타입
-enum ShapeKind {
+enum IShapeKind {
     Circle,
     Square,
 }
 
-interface Kind {
-    kind: ShapeKind.Circle | ShapeKind.Square;
+interface IKind {
+    kind: IShapeKind.Circle | IShapeKind.Square;
 }
 
-interface Circle extends Kind {
+interface ICircle extends IKind {
     radius: number;
 }
 
-interface Shape extends Kind {
+interface IShape extends IKind {
     sideLength: number;
 }
 
-let c: Circle = {
+const circle: ICircle = {
     radius: 100,
-    kind: ShapeKind.Circle,
+    kind: IShapeKind.Circle,
 };
 
-let s: Shape = {
+const s: IShape = {
     sideLength: 20,
-    kind: ShapeKind.Square,
+    kind: IShapeKind.Square,
 };

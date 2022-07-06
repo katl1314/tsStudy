@@ -1,14 +1,14 @@
 // 유니온 열거형과 유니온 멤버 타입
-var ShapeKind;
-(function (ShapeKind) {
-    ShapeKind[ShapeKind["Circle"] = 0] = "Circle";
-    ShapeKind[ShapeKind["Square"] = 1] = "Square";
-})(ShapeKind || (ShapeKind = {}));
-let c = {
+var IShapeKind;
+(function (IShapeKind) {
+    IShapeKind[IShapeKind["Circle"] = 0] = "Circle";
+    IShapeKind[IShapeKind["Square"] = 1] = "Square";
+})(IShapeKind || (IShapeKind = {}));
+const circle = {
     radius: 100,
-    kind: ShapeKind.Circle,
+    kind: IShapeKind.Circle,
 };
-let s = {
+const s = {
     sideLength: 20,
-    kind: ShapeKind.Square,
+    kind: IShapeKind.Square,
 };
