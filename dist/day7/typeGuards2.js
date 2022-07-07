@@ -15,6 +15,7 @@ var TypeGuards2;
     TypeGuards2.someFuncTypeof = someFuncTypeof;
     /**
      * in연산자를 이용하여 타입 가드를 제공함.
+     * in연산자 사용 시 우항의 객체의 타입은 any이어야만 함.
      */
     function someFuncIn(val) {
         if ("toFixed" in val) {
