@@ -2,7 +2,7 @@ namespace TypeGuards2 {
     /**
      * typeof를 이용하여 타입 가드 제공함.
      */
-    export function someFuncTypeof(val: any) {
+    export function someFuncTypeof(val: number | string) {
         if (typeof val === "number") {
             return val.toFixed(2);
         } else if (
@@ -15,6 +15,7 @@ namespace TypeGuards2 {
 
     /**
      * in연산자를 이용하여 타입 가드를 제공함.
+     * in연산자 사용 시 우항의 객체의 타입은 any이어야만 함.
      */
     export function someFuncIn(val: any) {
         if ("toFixed" in val) {
