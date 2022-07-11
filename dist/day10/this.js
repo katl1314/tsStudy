@@ -15,4 +15,4 @@ function someFnThis(arg) {
     // 이기때문에 에러가 발생함.
     console.log(`${this.name} ${arg}`);
 }
-someFnThis.call(cat5, "Hello");
+someFnThis.call(cat5, "Hello"); // 함수 someFnThis내 this를 객체cat5로 변환
