@@ -7,9 +7,12 @@
         "noImplicitAny": false, // any타입에 대해 엄격 검사 여부
         "outDir": "dist", // 컴파일 후 생성되는 폴더명
         "rootDir": "src",
-        "strictNullChecks": true // 루트 폴더
+        "strictNullChecks": true, // 루트 폴더
         // "strict": false
         // "noImplicitThis": true
+        "esModuleInterop": true,
+        "typeRoots": ["./node_modules/@types"],
+        "types": ["node", "lodash"]
     },
     "exclude": ["node_modules"],
     "include": ["src/**/*"]

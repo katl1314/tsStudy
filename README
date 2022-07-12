@@ -1,0 +1,4 @@
+에러 이슈
+
+1. Cannot use import statement outside a module Error 해결
+    - package.json내 "type" : "module"을 명시함.
