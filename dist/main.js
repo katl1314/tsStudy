@@ -1,5 +1,5 @@
 // 참조 태그(Triple-slash directive)
-import _ from "lodash";
+import * as _ from "lodash";
 console.log(_.padStart("Hello TypeScript!", 20, " "));
 console.log(_.camelCase("import lodash module")); // 공백 문자를 기준으로 공백문자다음 첫글자를 대문자로 변경함.(카멜 표기법)
 /**
@@ -16,5 +16,6 @@ console.log(_.camelCase("import lodash module")); // 공백 문자를 기준으�
 // snakeCase(camelCaseStr);
 const camelCase = _.camelCase("import lodash import");
 const snakeCase = _.snakeCase(camelCase);
-console.log(`camelCase : ${camelCase}`);
+console.log(`camelCase : ${camelCase}`); // 카멜 표기법으로 변환
+// import_lodash_import => 대문자 앞에 _(언더바)추가, 대문자를 소문자(카멜 표기법 -> 스네이크 표기법)
 console.log(`snakeCase : ${snakeCase}`);

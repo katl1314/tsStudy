@@ -1,5 +1,5 @@
 // 참조 태그(Triple-slash directive)
-import _ from "lodash";
+import * as _ from "lodash";
 console.log(_.padStart("Hello TypeScript!", 20, " "));
 console.log(_.camelCase("import lodash module")); // 공백 문자를 기준으로 공백문자다음 첫글자를 대문자로 변경함.(카멜 표기법)
 /**
